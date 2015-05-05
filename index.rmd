@@ -1,0 +1,43 @@
+---
+title: ""
+output:
+  html_document:
+    theme: null
+    highlight: null
+    css: styles.css
+---
+<font face="Helvetica">
+<h1><center>Welcome to OHI+</h1></center>
+
+<body style="background-color:white;text-align:center">
+
+<img src="https://docs.google.com/drawings/d/1hdKY2MpB3VmO6nZ6jV9POv1LHGwuO_07QqzQrOCoNas/pub?w=960&h=720"></img>
+
+<p>
+<font-size:100%>
+Phase I.
+<br>
+<a href="http://www.oceanhealthindex.org/Apps/OHI/Vault/Output?VaultID=7998&ts=1428349050">Click here to go to the Conceptual Guide.</a>
+</p>
+
+<p>
+Phase II.
+<br>
+<a href="CW_Philosophy.md">Read a philosophy here.</a>
+<p>
+
+#`r library(knitr)`
+#`r bd1 <- "Intro_portal.Rmd"`
+#`r bd2 <- knit(bd1)`
+`r readLines("Intro_portal.md")`
+
+</font>
+</body>
+
+<footer>
+`r timenow <- format(Sys.time(), "%d %B %Y")`
+<font-size:25% color:gray>
+Last updated: `r timenow`
+</footer>
+</font>
+
